@@ -1,3 +1,40 @@
+int size=(r-l)+1;
+       int temp_arr[size];
+        int i=l;
+        int j=m+1;
+        int k=0;
+        while(i<=m && j<=r)
+        {
+            if(arr[i]<arr[j])
+            {
+                temp_arr[k]=arr[i];
+                k++;
+                i++;
+            }
+            else{
+                temp_arr[k]=arr[j];
+                k++;
+                j++;
+            }
+        }
+        while(i<=m)
+        {
+            temp_arr[k]=arr[i];
+            i++;
+            k++;
+        }
+         while(j<=r)
+        {
+            temp_arr[k]=arr[j];
+            j++;
+            k++;
+        }
+        for(int t=0;t<size;t++)
+        {
+            arr[l+t]=temp_arr[t];
+        }
+        
+
 #include <iostream>
   using namespace std;
 
