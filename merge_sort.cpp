@@ -44,7 +44,7 @@ void merge(int arr[], int l, int m, int r) {
   int k = l;
 
   /* create temp array */
-  int temp[5];
+  int temp[r+1];
 
   while (i <= m && j <= r) {
     if (arr[i] <= arr[j]) {
